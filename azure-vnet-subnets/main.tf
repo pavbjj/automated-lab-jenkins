@@ -8,7 +8,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "main" {
   name     = "p-kuligowski-jenkins-rg"
-  location = "useast"
+  location = "eastus"
 }
 
 resource "azurerm_virtual_network" "main" {
