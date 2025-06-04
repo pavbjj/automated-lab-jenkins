@@ -10,6 +10,8 @@ terraform {
 provider "volterra" {
   timeout      = "90s"
   url          = var.url
+  api_cert     = var.api_cert
+  api_key      = var.api_key
 }
 
 resource "volterra_azure_vnet_site" "azure_site" {
