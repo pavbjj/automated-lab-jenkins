@@ -7,7 +7,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "main" {
-  name     = "p-kuligowski-jenkins-rg"
+  name     = "p-kuligowski-jenkins-vnet-rg"
   location = "eastus"
 }
 
