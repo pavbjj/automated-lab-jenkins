@@ -9,7 +9,6 @@ terraform {
 
 provider "volterra" {
   timeout      = "90s"
-  api_p12_file = "/tmp/p12.p12"
   url          = var.url
 }
 
