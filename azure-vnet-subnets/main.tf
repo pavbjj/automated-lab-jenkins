@@ -7,12 +7,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "main" {
-  name     = var.resource_group_name
-  location = var.location
+  name     = "p-kuligowski-jenkins-rg"
+  location = "useast"
 }
 
 resource "azurerm_virtual_network" "main" {
-  name                = var.resource_vnet_name
+  name                = "p-kuligowski-jenkins-vnet"
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
