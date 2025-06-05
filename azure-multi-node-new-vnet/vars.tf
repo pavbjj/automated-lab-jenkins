@@ -1,0 +1,9 @@
+variable "url" {}
+variable "azure_site_name" {}
+variable "existing_vnet_name" {}
+variable "vnet_resource_group" {}
+variable "azure_region" {}
+variable "azure_site_rg" {}
+variable "ssh_key" {}
+variable "api_cert" {}
+variable "api_key" {}
