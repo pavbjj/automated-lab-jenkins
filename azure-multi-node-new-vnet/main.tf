@@ -24,7 +24,7 @@ resource "volterra_azure_vnet_site" "azure_site" {
   }
   vnet {
     new_vnet {
-      primary_ipv4 = "10.1.0.0/24"
+      primary_ipv4 = "10.1.0.0/16"
     }
   }
 
