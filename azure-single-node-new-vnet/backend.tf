@@ -3,6 +3,6 @@ terraform {
     resource_group_name  = "p-kuligowski-rg"
     storage_account_name = "pkuligowskixc"
     container_name       = "f5xc"
-    key                  = "jenkins-single-node-existing-vnet.tfstate"
+    key                  = "jenkins-single-node-new-vnet.tfstate"
   }
 }
