@@ -6,6 +6,16 @@ provider "azurerm" {
   tenant_id       = var.tenant_id
 }
 
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">= 3.100.0"
+    }
+  }
+}
+
+
 resource "azurerm_resource_group" "main" {
   name     = "p-kuligowski-jenkins-vnet-rg"
   location = "eastus"
