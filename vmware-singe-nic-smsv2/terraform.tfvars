@@ -3,7 +3,7 @@
 #}
 
 prefix = "p-kuligowski"
-description = "Vmware TF"
+description = "Jenkins Vmware TF"
 memory = 16384
 num_cpus = 4
 
