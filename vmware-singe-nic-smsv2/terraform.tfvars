@@ -1,6 +1,6 @@
-volterra_config = {
-    url = "https://f5-consult.console.ves.volterra.io/api"
-}
+#volterra_config = {
+#    url = "https://f5-consult.console.ves.volterra.io/api"
+#}
 
 prefix = "p-kuligowski"
 description = "Vmware TF"
