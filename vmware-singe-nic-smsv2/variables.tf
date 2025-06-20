@@ -1,8 +1,9 @@
 variable volterra_config {
 
   type = object({
-    api_p12_file = string
     url = string
+    api_cert     = string
+    api_key      = string
   })
 
 }
