@@ -1,5 +1,4 @@
 volterra_config = {
-    api_p12_file = "./p12.p12"
     url = "https://f5-consult.console.ves.volterra.io/api"
 }
 
