@@ -1,12 +1,16 @@
-variable volterra_config {
+#variable volterra_config {#
+#
+#  type = object({
+#    url = string
+#    api_cert     = string
+#    api_key      = string
+#  })
+#
+#}
 
-  type = object({
-    url = string
-    api_cert     = string
-    api_key      = string
-  })
-
-}
+variable "url" {}
+variable "api_cert" {}
+variable "api_key" {}
 
 variable vsphere_config {
 
