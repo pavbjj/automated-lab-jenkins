@@ -14,4 +14,6 @@ provider "vsphere" {
 provider "volterra" {
   api_p12_file = var.volterra_config.api_p12_file
   url          = var.volterra_config.url
+  api_cert = var.api_cert
+  api_key  = var.api_key
 }
