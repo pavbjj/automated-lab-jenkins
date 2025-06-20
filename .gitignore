@@ -5,4 +5,5 @@
 crash.log
 *.tfplan
 *.backup
+*.terraform.lock.hcl*
 *.p12
