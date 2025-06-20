@@ -12,7 +12,7 @@ provider "vsphere" {
 }
 
 provider "volterra" {
-  url          = var.volterra_config.url
+  url          = var.url
   api_cert = var.api_cert
   api_key  = var.api_key
 }
