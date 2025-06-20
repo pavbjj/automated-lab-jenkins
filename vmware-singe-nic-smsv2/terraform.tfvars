@@ -15,9 +15,9 @@ vsphere_config = {
     network_inside = "pkuligowski"
     folder = "/waw-gslab-dc/vm/p/pkuligowski/"
     hosts = [
-        "10.170.2.33",
-        "10.170.2.33",
-        "10.170.2.33"
+        "esx-r2-s33.waw.gs.lab",
+        "esx-r2-s33.waw.gs.lab",
+        "esx-r2-s33.waw.gs.lab"
     ]
     virtual_machine_prefix = "f5xc"
 }
