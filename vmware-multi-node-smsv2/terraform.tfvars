@@ -37,7 +37,7 @@ cluster_config = {
       destination = "0.0.0.0/0"
       gateway     = "10.171.255.254"
     }
-  },
+  }
   node2 = {
     hostname = "node-1"
     addresses = {
@@ -47,7 +47,7 @@ cluster_config = {
       destination = "0.0.0.0/0"
       gateway     = "10.171.255.254"
     }
-  },
+  }
   node3 = {
     hostname = "node-2"
     addresses = {
