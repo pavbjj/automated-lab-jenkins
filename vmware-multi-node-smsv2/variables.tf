@@ -38,14 +38,9 @@ variable "cluster_config" {
 
     shared = object({
       ova_url = string
-      # cluster_name = string
-      # token = string
       admin_password = string
       dns_server1    = string
       dns_server2    = string
-      # latitude = string
-      # longitude = string
-      # certificate_hardware = string
     })
 
     node1 = object({
@@ -59,29 +54,29 @@ variable "cluster_config" {
       })
     })
 
-    # node2 = object({
-    #   hostname = string
-    #   addresses = object({
-    #     outside = string
-    #     inside = string
-    #   })
-    #   route = object({
-    #     destination = string
-    #     gateway = string
-    #   })
-    # })
+    node2 = object({
+      hostname = string
+      addresses = object({
+        outside = string
+        inside = string
+      })
+      route = object({
+        destination = string
+        gateway = string
+      })
+    })
 
-    # node3 = object({
-    #   hostname = string
-    #   addresses = object({
-    #     outside = string
-    #     inside = string
-    #   })
-    #   route = object({
-    #     destination = string
-    #     gateway = string
-    #   })
-    # })
+    node3 = object({
+      hostname = string
+      addresses = object({
+        outside = string
+        inside = string
+      })
+      route = object({
+        destination = string
+        gateway = string
+      })
+    })
 
   })
 }
