@@ -58,7 +58,6 @@ variable "cluster_config" {
       hostname = string
       addresses = object({
         outside = string
-        inside = string
       })
       route = object({
         destination = string
@@ -70,7 +69,6 @@ variable "cluster_config" {
       hostname = string
       addresses = object({
         outside = string
-        inside = string
       })
       route = object({
         destination = string
