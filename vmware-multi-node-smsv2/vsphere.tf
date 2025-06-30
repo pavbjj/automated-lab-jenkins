@@ -63,7 +63,8 @@ resource "vsphere_virtual_machine" "node1" {
   }
   depends_on = [
     volterra_token.node-1,
-  volterra_securemesh_site_v2.node-1]
+    volterra_securemesh_site_v2.node-1
+    ]
 
   lifecycle {
     ignore_changes = [
@@ -129,7 +130,8 @@ resource "vsphere_virtual_machine" "node2" {
   }
   depends_on = [
     volterra_token.node-1,
-  volterra_securemesh_site_v2.node-1]
+    volterra_securemesh_site_v2.node-1
+    ]
 
   lifecycle {
     ignore_changes = [
@@ -195,7 +197,8 @@ resource "vsphere_virtual_machine" "node3" {
   }
   depends_on = [
     volterra_token.node-1,
-  volterra_securemesh_site_v2.node-1]
+    volterra_securemesh_site_v2.node-1
+    ]
 
   lifecycle {
     ignore_changes = [
