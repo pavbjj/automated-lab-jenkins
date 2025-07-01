@@ -117,7 +117,7 @@ resource "vsphere_virtual_machine" "node2" {
 
   vapp {
     properties = {
-      "guestinfo.hostname"  = var.cluster_config.node1.hostname
+      "guestinfo.hostname"  = var.cluster_config.node2.hostname
       "guestinfo.ves.token" = volterra_token.node-2.id
       "guestinfo.ves.adminpassword" : var.cluster_config.shared.admin_password
       "guestinfo.interface.0.dhcp"                = "no"
@@ -184,7 +184,7 @@ resource "vsphere_virtual_machine" "node3" {
 
   vapp {
     properties = {
-      "guestinfo.hostname"  = var.cluster_config.node1.hostname
+      "guestinfo.hostname"  = var.cluster_config.node3.hostname
       "guestinfo.ves.token" = volterra_token.node-3.id
       "guestinfo.ves.adminpassword" : var.cluster_config.shared.admin_password
       "guestinfo.interface.0.dhcp"                = "no"
