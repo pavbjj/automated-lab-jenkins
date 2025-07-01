@@ -118,7 +118,7 @@ resource "vsphere_virtual_machine" "node2" {
   vapp {
     properties = {
       "guestinfo.hostname"  = var.cluster_config.node1.hostname
-      "guestinfo.ves.token" = volterra_token.node-1.id
+      "guestinfo.ves.token" = volterra_token.node-2.id
       "guestinfo.ves.adminpassword" : var.cluster_config.shared.admin_password
       "guestinfo.interface.0.dhcp"                = "no"
       "guestinfo.interface.0.ip.0.address"        = var.cluster_config.node1.addresses.outside
@@ -129,7 +129,7 @@ resource "vsphere_virtual_machine" "node2" {
     }
   }
   depends_on = [
-    volterra_token.node-1,
+    volterra_token.node-2,
     volterra_securemesh_site_v2.node-1
     ]
 
@@ -185,7 +185,7 @@ resource "vsphere_virtual_machine" "node3" {
   vapp {
     properties = {
       "guestinfo.hostname"  = var.cluster_config.node1.hostname
-      "guestinfo.ves.token" = volterra_token.node-1.id
+      "guestinfo.ves.token" = volterra_token.node-3.id
       "guestinfo.ves.adminpassword" : var.cluster_config.shared.admin_password
       "guestinfo.interface.0.dhcp"                = "no"
       "guestinfo.interface.0.ip.0.address"        = var.cluster_config.node1.addresses.outside
@@ -196,7 +196,7 @@ resource "vsphere_virtual_machine" "node3" {
     }
   }
   depends_on = [
-    volterra_token.node-1,
+    volterra_token.node-3,
     volterra_securemesh_site_v2.node-1
     ]
 
