@@ -121,9 +121,9 @@ resource "vsphere_virtual_machine" "node2" {
       "guestinfo.ves.token" = volterra_token.node-2.id
       "guestinfo.ves.adminpassword" : var.cluster_config.shared.admin_password
       "guestinfo.interface.0.dhcp"                = "no"
-      "guestinfo.interface.0.ip.0.address"        = var.cluster_config.node1.addresses.outside
-      "guestinfo.interface.0.route.0.gateway"     = var.cluster_config.node1.route.gateway
-      "guestinfo.interface.0.route.0.destination" = var.cluster_config.node1.route.destination
+      "guestinfo.interface.0.ip.0.address"        = var.cluster_config.node2.addresses.outside
+      "guestinfo.interface.0.route.0.gateway"     = var.cluster_config.node2.route.gateway
+      "guestinfo.interface.0.route.0.destination" = var.cluster_config.node2.route.destination
       "guestinfo.dns.server.0"                    = var.cluster_config.shared.dns_server1
       "guestinfo.dns.server.1"                    = var.cluster_config.shared.dns_server2
     }
@@ -188,9 +188,9 @@ resource "vsphere_virtual_machine" "node3" {
       "guestinfo.ves.token" = volterra_token.node-3.id
       "guestinfo.ves.adminpassword" : var.cluster_config.shared.admin_password
       "guestinfo.interface.0.dhcp"                = "no"
-      "guestinfo.interface.0.ip.0.address"        = var.cluster_config.node1.addresses.outside
-      "guestinfo.interface.0.route.0.gateway"     = var.cluster_config.node1.route.gateway
-      "guestinfo.interface.0.route.0.destination" = var.cluster_config.node1.route.destination
+      "guestinfo.interface.0.ip.0.address"        = var.cluster_config.node3.addresses.outside
+      "guestinfo.interface.0.route.0.gateway"     = var.cluster_config.node3.route.gateway
+      "guestinfo.interface.0.route.0.destination" = var.cluster_config.node3.route.destination
       "guestinfo.dns.server.0"                    = var.cluster_config.shared.dns_server1
       "guestinfo.dns.server.1"                    = var.cluster_config.shared.dns_server2
     }
