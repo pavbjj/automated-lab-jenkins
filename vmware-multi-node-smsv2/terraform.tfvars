@@ -15,7 +15,7 @@ vsphere_config = {
     "esx-r2-s33.waw.gs.lab",
     "esx-r2-s33.waw.gs.lab"
   ]
-  virtual_machine_prefix = "f5xc"
+  virtual_machine_prefix = "pkuligowski-jenkins"
 }
 
 cluster_config = {
