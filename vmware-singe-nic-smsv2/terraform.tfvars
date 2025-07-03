@@ -19,7 +19,7 @@ vsphere_config = {
         "esx-r2-s33.waw.gs.lab",
         "esx-r2-s33.waw.gs.lab"
     ]
-    virtual_machine_prefix = "f5xc"
+    virtual_machine_prefix = "f5xc-single-node"
 }
 
 cluster_config = {
@@ -35,7 +35,7 @@ cluster_config = {
     node1 = {
         hostname = "node-0"
         addresses = {
-            outside = "10.171.176.140/16"
+            outside = "10.171.176.143/16"
   
         }
         route = {
