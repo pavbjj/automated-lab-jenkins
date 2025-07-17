@@ -40,7 +40,7 @@ cluster_config = {
         }
         route = {
             destination = "0.0.0.0/0"
-            gateway = "10.171.255.254"
+            gateway = "10.171.176.131"
         }
     }
 }
