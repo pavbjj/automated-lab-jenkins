@@ -75,7 +75,7 @@ resource "aws_instance" "p-kuligowski-ec2" {
   subnet_id              = aws_subnet.p-kuligowski-subnet.id
   vpc_security_group_ids = [aws_security_group.p-kuligowski-sg.id]
   associate_public_ip_address = true
-  key_name               = "p-kuligowski-macbook" # Replace with your key name
+  key_name               = "p-kuligowski-macbook"
 
   tags = {
     Name = "p-kuligowski-ec2"
