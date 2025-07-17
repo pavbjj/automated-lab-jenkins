@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 resource "aws_vpc" "p-kuligowski-vpc" {
@@ -12,7 +12,7 @@ resource "aws_vpc" "p-kuligowski-vpc" {
 resource "aws_subnet" "p-kuligowski-subnet" {
   vpc_id                  = aws_vpc.p-kuligowski-vpc.id
   cidr_block              = "10.0.1.0/24"
-  availability_zone       = "us-east-2a"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = true
   tags = {
     Name = "p-kuligowski-subnet"
@@ -70,12 +70,12 @@ resource "aws_security_group" "p-kuligowski-sg" {
 }
 
 resource "aws_instance" "p-kuligowski-ec2" {
-  ami                    = "ami-09040d770ffe2224f" # ubuntu
+  ami                    = "ami-020cba7c55df1f615" # ubuntu
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.p-kuligowski-subnet.id
   vpc_security_group_ids = [aws_security_group.p-kuligowski-sg.id]
   associate_public_ip_address = true
-  key_name               = "p-kuligowski-aws-ssh" # Replace with your key name
+  key_name               = "p-kuligowski-macbook" # Replace with your key name
 
   tags = {
     Name = "p-kuligowski-ec2"

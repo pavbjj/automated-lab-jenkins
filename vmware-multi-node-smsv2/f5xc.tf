@@ -21,6 +21,9 @@ resource "volterra_securemesh_site_v2" "node-1" {
     not_managed {
     }
   }
+  load_balancing {
+    vip_vrrp_mode = "VIP_VRRP_ENABLE"
+  }
 }
 
 # Create SMSv2 tokens
