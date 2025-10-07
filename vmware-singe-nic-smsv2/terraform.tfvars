@@ -9,7 +9,7 @@ num_cpus = 4
 
 vsphere_config = {
     datacenter = "waw-gslab-dc"
-    compute_cluster = "Cluster2-v7.0-Intel"
+    compute_cluster = "Cluster2-v8.0-Intel"
     datastore = "RunningVMs-1"
     network_outside = "Public Access"
     network_inside = "pkuligowski"
