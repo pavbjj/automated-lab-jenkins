@@ -35,7 +35,7 @@ cluster_config = {
     node1 = {
         hostname = "node-0"
         addresses = {
-            outside = "10.171.176.143/16"
+            outside = "10.171.176.144/16"
   
         }
         route = {
